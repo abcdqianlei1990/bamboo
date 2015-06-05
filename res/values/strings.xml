@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">出差斑驴</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string-array name="showAllDialog">
+        <item >查看该次出差所有明细</item>
+        <item >为该次出差添加明细</item>
+        <item >删除该条记录</item>
+    </string-array>
+    <string-array name="transportationType">
+        <item >飞机</item>
+        <item >火车</item>
+        <item >轮船</item>
+        <item >汽车</item>
+        <item >出租车</item>
+        <item >地铁</item>
+    </string-array>
+<color name="luanchBackground">#B7EC8B</color>
+<color name="textRed">#EC1F85</color>
+<color name="labelColor">#10C5E5</color>
+<color name="buttonDownColor">#32A1B3</color>
+</resources>

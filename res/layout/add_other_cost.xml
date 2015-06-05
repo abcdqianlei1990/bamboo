@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/ed_addOtherCost_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="53dp"
+        android:ems="10"
+        android:hint="请输入消费项(如:吃饭)" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/ed_addOtherCost_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ed_addOtherCost_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="59dp"
+        android:ems="10"
+        android:hint="请输入消费金额" />
+
+    <Button
+        android:id="@+id/btn_addOtherCost_reset"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ed_addOtherCost_money"
+        android:layout_below="@+id/ed_addOtherCost_money"
+        android:layout_marginTop="50dp"
+        style="@style/buttonStyle"
+        android:background="@drawable/my_button_selector"
+        android:text="清空" />
+
+    <Button
+        android:id="@+id/btn_addOtherCost_ok"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn_addOtherCost_reset"
+        android:layout_alignBottom="@+id/btn_addOtherCost_reset"
+        android:layout_marginLeft="26dp"
+        android:layout_toRightOf="@+id/btn_addOtherCost_reset"
+        style="@style/buttonStyle"
+        android:background="@drawable/my_button_selector"
+        android:text="确认" />
+
+</RelativeLayout>

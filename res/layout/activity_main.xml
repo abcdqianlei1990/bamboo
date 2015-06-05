@@ -1,0 +1,84 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    
+    tools:context=".MainActivity" >
+    <Button
+        android:id="@+id/main_QueryAllBtn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        style="@style/buttonStyle"
+        android:background="@drawable/my_button_selector"
+        android:text="查询所有行程" />
+
+    <Button
+        android:id="@+id/main_addBtn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        style="@style/buttonStyle"
+        android:background="@drawable/my_button_selector"
+        android:layout_gravity="center_horizontal"
+        android:text="添加行程信息" />
+
+    <LinearLayout
+        android:layout_marginTop="25dp"
+        android:id="@+id/main_liner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        >
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            
+            <EditText 
+            android:id="@+id/main_inputName"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:hint="输入客户名"
+            />
+        <EditText 
+            android:id="@+id/main_inputStart"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:hint="startDate"
+            />
+        <EditText 
+            android:id="@+id/main_inputEnd"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:hint="endDate"
+            />
+            
+            
+        </LinearLayout>
+        
+        
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/main_searchBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/buttonStyle"
+        android:background="@drawable/my_button_selector"
+        android:text="查询" />
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

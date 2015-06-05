@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.qian.workeveryday"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.qian.activity.LuanchActivity_"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+         <activity
+            android:name="com.qian.activity.MainActivity_"
+            android:label="@string/app_name" >
+            <intent-filter>
+                 <action android:name="mainactivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity> 
+        <activity
+            android:name="com.qian.activity.GuideActivity_"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="guideactivity"/>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.qian.activity.DisplayAllWorkInfo_"
+            android:parentActivityName="com.qian.activity.MainActivity_"
+            android:label="显示所有出差信息" >
+            <intent-filter>
+                <action android:name="displayall" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.qian.activity.AddWork_"
+            android:parentActivityName="com.qian.activity.MainActivity_"
+            
+            android:label="创建行程" >
+            <intent-filter>
+                <action android:name="addworkinfo" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity 
+            android:name="com.qian.activity.AddDayJobDetail_"
+            android:label="添加每天工作"
+            >
+            <intent-filter >
+                <action android:name="adddayjobdetail"/>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity 
+            android:name="com.qian.activity.DisplayDayJobDetail_"
+            android:label="出差时间每天工作"
+            >
+            <intent-filter >
+                <action android:name="displaydayjobcontent"/>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+         <activity 
+            android:name="com.qian.activity.AddTransportDetail_"
+            android:label="添加交通明细"
+            >
+            <intent-filter >
+                <action android:name="addtransportationdetail"/>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity 
+            android:name="com.qian.activity.AddOtherCostActivity_"
+            android:label="添加其他支出"
+            >
+            <intent-filter >
+                <action android:name="addothercost"/>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity 
+            android:name="com.qian.activity.DisplayPartWorkInfoActivity_"
+            android:label="出差信息查询结果"
+            android:parentActivityName="com.qian.activity.MainActivity"
+            >
+            <intent-filter >
+                <action android:name="queryworkinfo"/>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

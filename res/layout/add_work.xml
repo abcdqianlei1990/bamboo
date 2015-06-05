@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/add_customerName"
+        android:hint="添加客户名"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/add_workContent"
+        android:hint="添加出差内容"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_customerName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/add_location"
+        android:hint="添加出差地"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/add_workContent"
+        android:layout_below="@+id/add_workContent"
+        android:layout_marginTop="18dp"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/add_startDate"
+        android:hint="添加起始日期"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/add_location"
+        android:layout_below="@+id/add_location"
+        android:layout_marginTop="18dp"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/add_endDate"
+        android:hint="添加结束日期"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_startDate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:ems="10" />
+
+    <Button
+        android:id="@+id/add_btn_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/add_endDate"
+        android:layout_below="@+id/add_endDate"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/my_button_selector"
+        android:textColor="@android:color/white"
+        android:text="清空" />
+
+    <Button
+        android:id="@+id/add_btn_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/add_btn_reset"
+        android:layout_alignBottom="@+id/add_btn_reset"
+        android:layout_alignRight="@+id/add_endDate"
+        android:textColor="@android:color/white"
+        android:background="@drawable/my_button_selector"
+        android:text="完成" />
+
+</RelativeLayout>

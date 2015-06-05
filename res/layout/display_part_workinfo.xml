@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/FrameLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+
+        <ListView
+            android:id="@+id/lv_displayPartWorkInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </ListView>
+
+        <TextView
+            android:id="@+id/tv_displayPartWorkInfo_message"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="165dp"
+            android:text="无此记录......"
+            android:textSize="50sp"
+            android:visibility="gone" />
+
+</FrameLayout>
